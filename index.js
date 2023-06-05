@@ -2,7 +2,7 @@ let hands = ["🖐", "✌","✊"]
 
 let stageEl = document.getElementById("stage")
 let fightButton = document.getElementById("fightButton")
-let ganador = document.getElementById("ganador")
+let ganador = document.getElementById("ganador-el")
 
 fightButton.addEventListener("click", function() {
     
