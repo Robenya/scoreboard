@@ -1,13 +1,11 @@
-let contador = document.getElementById("contador")
-let cuenta = 0
-contador.textContent = "Usa esto para contar: " + cuenta
+let hands = ["🖐", "✌","✊"]
 
-function agregar() {
-    cuenta += 1
-    contador.textContent = "Usa esto para contar: " + cuenta
-}
+let stageEl = document.getElementById("stage")
+let fightButton = document.getElementById("fightButton")
 
-function quitar() {
-    cuenta -= 1
-    contador.textContent = "Usa esto para contar: " + cuenta
-}
+fightButton.addEventListener("click", function() {
+    function getHand(){
+        return hands[Math.floor(Math.random() * hands.length)]
+    }
+    stageEl.textContent = getHand() + " VS " + getHand()
+})
