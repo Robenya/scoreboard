@@ -4,12 +4,11 @@ let cuenta = 0
 contador.textContent = cuenta
 
 function agregar() {
-    cuenta++
+    cuenta += 1
     contador.textContent = cuenta
 }
 
 function quitar() {
-    cuenta--
+    cuenta -= 1
     contador.textContent = cuenta
 }
-
